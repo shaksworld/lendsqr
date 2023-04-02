@@ -1,0 +1,123 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  .navbar-logo {
+    img {
+      height: 2rem;
+    }
+  }
+
+  .navbar-search {
+        display: flex;
+        align-items: center;
+        background: #FFFFFF;
+        opacity: 0.2;
+        border: 1px solid #213F7D;
+        border-radius: 8px;
+        width: 300px;
+        height: 30px;
+
+    input {
+      border: none;
+      outline: none;
+      padding: 5px;
+      margin-right: 5px;
+      width: 90%;
+    }
+
+    button {
+      border: none;
+      background: #39CDCC;
+      cursor: pointer;
+      width: 10%;
+      height: 100%;
+    }
+    button img {
+      height: 16px;
+      width: auto;
+      margin: auto;
+    }
+  }
+
+  .side-bar {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    justify-content: space-between;
+    a {
+      color: #333333;
+      font-size: 1.125rem;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    h4 {
+      font-size: 1.125rem;
+      margin: 0;
+    }
+    .profile-picture {
+      border-radius: 50%;
+      width: 50%;
+    }
+
+    .drop-down-manu {
+      width: 13px;
+      margin-left: -10px;
+      margin-bottom: -10px;
+    }
+  } 
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-main {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+
+    .navbar-search {
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .side-bar {
+      display: none;
+    }
+  }
+
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    width: 10rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+    a {
+      display: block;
+      padding: 0.5rem;
+      color: #333333;
+      font-size: 1.125rem;
+      text-decoration: none;
+      &:hover {
+        background-color: #eee;
+      }
+    }
+  }
+}

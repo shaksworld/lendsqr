@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .side-bar-main{
+    background-color: #fff;
+    width: 283px;
+    height: 100%;
+    padding: 20px;
+    font-size: 14px;
+          
+            .side-bar-briefcase {
+              display: flex;
+              align-items: center;
+              margin-bottom: 30px;
+          
+              img {
+                margin-right: 10px;
+              }
+          
+              h4 {
+                font-weight: 500;
+                margin-right: 10px;
+                cursor: pointer;
+              }
+            }
+          
+            .side-bar-menu {
+              margin-bottom: 30px;
+              display: flex;
+              .side-bar-menu-item{
+                display: flex;
+              }
+          
+              .side-bar-menu-item {
+                // display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                cursor: pointer;
+          
+                img {
+                  margin-right: 10px;
+                }
+          
+                h4 {
+                  font-weight: 500;
+                }
+              }
+          
+              .side-bar-user,
+              .side-bar-group,
+              .side-bar-loan,
+              .side-bar-transaction,
+              .side-bar-savings,
+              .side-bar-loan-request,
+              .side-bar-whitelist,
+              .side-bar-karma {
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+                cursor: pointer;
+          
+                img {
+                  margin-right: 10px;
+                }
+          
+                h4 {
+                  font-weight: 500;
+                }
+              }
+            }
+  }
